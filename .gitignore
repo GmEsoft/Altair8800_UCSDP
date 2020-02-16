@@ -7,3 +7,10 @@
 /Altair8800_UCSDP/farmenu.ini
 /Altair8800_UCSDP/DISK01.JOB
 /Altair8800_UCSDP/fix_ucsdp_altair.bat
+/Altair8800_UCSDP/cpmsim
+/Altair8800_UCSDP/*.IMG
+/Altair8800_UCSDP/*.obj
+/Altair8800_UCSDP/build
+/Altair8800_UCSDP/zmac
+/Altair8800_UCSDP/*.LST
+/Altair8800_UCSDP/*.MAP
