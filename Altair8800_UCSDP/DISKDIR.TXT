@@ -1,0 +1,44 @@
+---------------------------------------------
+Available disks images:
+---------------------------------------------
+0001) DISK01.DSK: CP/M (63k)
+0010) DISK02.DSK: ALTAIR DOS 1.0
+0011) DISK03.DSK: ALTAIR Disk Basic
+0100) DISK04.DSK: ALTAIR Disk Basic programs
+0101) DISK05.DSK: Games (CP/M programs)
+0110) DISK06.DSK: SuperCalc II (CP/M program)
+0111) DISK07.DSK: WordStar (CP/M program)
+1000) DISK08.DSK: Zork (CP/M game)
+1001) DISK09.DSK: Time Sharing Basic V1.1
+1010) DISK0A.DSK: Time Sharing Basic V2
+1011) DISK0B.DSK: Time Sharing Basic V2 programs
+1100) DISK0C.DSK: Altair Mini-Disk Basic
+1101) DISK0D.DSK: Altair Mini-Disk Basic programs
+1110) DISK0E.DSK: Altair Mini-Disk DOS
+1111) DISK0F.DSK: Altair Mini-Disk DOS programs
+10000) DISK10.DSK: Hitchhikers Guide to the Galaxy
+10001) DISK11.DSK: Planetfall
+10010) DISK12.DSK: Colossal Cave Adventure
+10011) DISK13.DSK: CP/M 2.2b (modern version)
+10100) DISK14.DSK: ALTAIR Mini-Disk DOS Fortran
+                  (not bootable - mount in drive 1)
+100000) DISK20.DSK: CP/M Adaptable UCSD P-System
+100001) DISK21.DSK: UCSD P-System Sys2
+100010) DISK22.DSK: UCSD P-System Interp
+100011) DISK23.DSK: UCSD Pascal Games
+100100) DISK24.DSK: UCSD Pascal Colossal Cave Exec
+100101) DISK25.DSK: UCSD Pascal Colossal Cave Source
+100110) DISK26.DSK: UCSD Pascal Star Trek
+100111) DISK27.DSK: UCSD Pascal Prof K Bowles DB Proj Exec
+101000) DISK28.DSK: UCSD Pascal Prof K Bowles DB Proj Source
+110000) DISK30.DSK: UCSD Pascal System I4 SYS:
+110001) DISK31.DSK: UCSD Pascal System I5 SYS1:
+110010) DISK32.DSK: UCSD Pascal System I5 SYS2:
+110011) DISK33.DSK: UCSD Pascal System I5 INTERP:
+110100) DISK34.DSK: UCSD Pascal System II SYS1:
+110101) DISK35.DSK: UCSD Pascal System II SYS2:
+110110) DISK36.DSK: UCSD Pascal System II INTERP:
+---------------------------------------------
+These images were put together by Mike Douglas.
+See README.TXT for more information.
+

@@ -1,0 +1,25 @@
+L0100	EQU	00001H		;Track 0, sector 0
+L0101	EQU	00101H		;Track 1, sector 0
+IPL	EQU	00000H		;bootstrap entry point
+WREADY	EQU	00007H		;wait drive ready
+STEPOUT	EQU	00015H		;step head outwards
+CKTRK0	EQU	00020H		;check that track# is 0
+WMOVENA	EQU	00030H		;wait head movement allowed
+RDTRACK	EQU	00048H		;load full track in memory
+RDTRAC1	EQU	00056H		;skip locations < 0DF00H
+LSECTOR	EQU	00072H		;Load sector to memory and check
+RSECTOR	EQU	00092H		;read sector B-1 to buffer
+WREAD	EQU	0009BH		;wait read byte
+WSECTOR	EQU	000B4H		;wait sector# in B and sector_true
+LWSECT	EQU	000B7H
+MOVDATA	EQU	000C4H		;Move data from buf to mem & calc cks
+LMVDAT	EQU	000C8H
+HDLOAD	EQU	000D3H		;Load head to surface
+BIOSTK0	EQU	0DD80H		;BIOS dest for track 0
+SECBUF	EQU	0DE00H		;Sector buffer
+SECCKS	EQU	0DE84H		;Sector checksum
+STACK	EQU	0DF00H		;Stack origin
+BIOSTK1	EQU	0ED80H		;BIOS dest for track 1
+DF080	EQU	0F080H		;-0F80H for odd sectors
+BIOSTRA	EQU	0F500H		;BIOS entry point
+DFFFA	EQU	0FFFAH		;-6

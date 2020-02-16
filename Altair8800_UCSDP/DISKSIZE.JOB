@@ -1,0 +1,15 @@
+WAITFOR "[IV.0 B3h]"
+TRANSMIT " X"
+WAITFOR "Execute what file? "
+TRANSMIT "#5:DISKSIZE^M"
+WAITFOR "(4,5,9..12) "
+TRANSMIT "10^M"
+WAITFOR "size in 512 byte blocks ? "
+TRANSMIT "608^M"
+WAITFOR "press return"
+REM PAUSE " ..."
+TRANSMIT "^M"
+
+WAITFOR "[IV.0 B3h]"
+MESSAGE "^J### JDone ###^J"
+QUIT

@@ -1,0 +1,9 @@
+/Altair8800_UCSDP/backup.bat
+/Altair8800_UCSDP/DISK01_BIOS.bat
+*.DSK
+/Altair8800_UCSDP/ucsdp_altair.bat
+/Altair8800_UCSDP/update_ucsdp_altair.bat
+/Altair8800_UCSDP/*.exe
+/Altair8800_UCSDP/farmenu.ini
+/Altair8800_UCSDP/DISK01.JOB
+/Altair8800_UCSDP/fix_ucsdp_altair.bat

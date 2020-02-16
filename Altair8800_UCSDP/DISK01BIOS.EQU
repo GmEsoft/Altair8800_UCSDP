@@ -1,0 +1,139 @@
+CCPWARM	EQU	0DF00H		;Warm boot CCP
+CCPCOLD	EQU	0DF03H		;Cold boot CCP (abort SUBMIT?)
+CCPCLD_	EQU	0E258H		;Cold start CCP (abort SUBMIT?)
+CCPWRM_	EQU	0E25CH		;Warm start CCP
+CCPSTK	EQU	0E6ABH		;Stack origin
+FDOS	EQU	0E706H		;FDOS entry point
+FDOS1	EQU	0E711H		;FDOS entry point
+CBOOT	EQU	0F500H
+WBOOT	EQU	0F503H
+CONST	EQU	0F506H
+CONIN	EQU	0F509H
+CONOUT	EQU	0F50CH
+LIST	EQU	0F50FH
+PUNCH	EQU	0F512H
+READER	EQU	0F515H
+HOME	EQU	0F518H
+SELDSK	EQU	0F51BH
+SETTRK	EQU	0F51EH
+SETSEC	EQU	0F521H
+SETDMA	EQU	0F524H
+READ	EQU	0F527H
+WRITE	EQU	0F52AH
+LISTST	EQU	0F52DH
+SECTRAN	EQU	0F530H
+MSIGNIN	EQU	0F533H		;CP/M Sign-in message
+MVERSIO	EQU	0F536H		;CP/M Version String
+CBOOT_	EQU	0F57CH		;Cold boot
+LCBOO_1	EQU	0F58DH
+BCBOO_1	EQU	0F596H
+LCBOO_2	EQU	0F59FH
+WBOOT_	EQU	0F5ACH		;Warm boot
+LDCCP	EQU	0F5E2H		;(Re-)Load CCP to mem
+DOLTRK	EQU	0F5F3H		;Do load track
+SKPLTRK	EQU	0F5F9H		;Skip loading track
+INICPM	EQU	0F616H		;Initialize CP/M
+BINICP1	EQU	0F646H
+BINICP2	EQU	0F648H
+SELDSK_	EQU	0F64EH		;select disk given by C; DCB to HL
+HOME_	EQU	0F665H		;move to the track 00 position of current drive
+SETTRK_	EQU	0F668H		;set track given by C
+SETSEC_	EQU	0F66DH		;set sector given by C
+SETDMA_	EQU	0F672H		;set DMA address given by BC
+READ_	EQU	0F678H		;perform read operation
+WRITE_	EQU	0F687H		;perform a write operation
+ENDRDWR	EQU	0F6A8H		;End read/write
+ENDRWNI	EQU	0F6B2H
+SECTRN_	EQU	0F6BEH		;Translate sect in BC using table in DE to HL
+GTRKSEC	EQU	0F6C4H		;Get trk# in C and sec# in B
+CONIN_	EQU	0F6CEH		;console character into A
+PUSHSP	EQU	0F6D4H		;Push SP and switch to local stack
+POPSP	EQU	0F6E3H		;Pop old SP
+NEWDRV	EQU	0F6E6H		;New drive
+NEWTRK	EQU	0F6E7H		;New track
+NEWSEC	EQU	0F6E8H		;New sector
+NEWDMA	EQU	0F6E9H		;DMA address
+IGNFLGS	EQU	0F6EBH		;set to 1 to ignore flags (??)
+CURDRV	EQU	0F6ECH		;Current drive
+RETRYCT	EQU	0F6EEH		;Retry counter
+WARMFLG	EQU	0F6EFH		;Warm boot flag (?)
+CURTRKS	EQU	0F6F0H		;Current tracks (?) Bit7 set if disabled (?)
+RDSECT	EQU	0F6F4H		;Seek and read sector
+RDSECT1	EQU	0F6F8H		;Read sector and move data
+RDSRTRY	EQU	0F6F9H		;Retry read sect
+GETTYP2	EQU	0F741H		;Get type 2 sector data
+RESEEK	EQU	0F77FH		;Bad track: redo track seek
+ENDRDSC	EQU	0F786H		;End sector read, no data move
+RSECT1	EQU	0F789H		;Read 1 sector (already on track)
+LRSCT11	EQU	0F78EH		;bytes loop
+XRSCT11	EQU	0F7A5H		;Exit bytes loop
+WSECTOR	EQU	0F7A7H		;wait physical sector# in B and sector_true
+WSECTR1	EQU	0F7AAH
+WRSECT	EQU	0F7B7H		;seek and write sector
+PUTTYP2	EQU	0F7E8H		;Put type 2 sector data
+WRNOMOV	EQU	0F80DH		;Write without data move
+WRNOMV1	EQU	0F81AH
+WRNOMV2	EQU	0F836H
+WRNOMV3	EQU	0F84DH
+MOVDATA	EQU	0F85BH		;Move data from (HL) to (BC); checksum to A and D
+LMVDATA	EQU	0F85FH
+CALCSEC	EQU	0F86AH		;Calculate physical sec (interleave 17 for type 2) to E
+SEEK	EQU	0F87BH		;seldrive and seek track
+SEEK1	EQU	0F887H		;seek track
+LSEEK1	EQU	0F89CH
+LSEEK2	EQU	0F89DH
+BSEEK1	EQU	0F8B8H
+LSEEK3	EQU	0F8C5H
+LSEEK4	EQU	0F8CBH
+SELDRIV	EQU	0F8DBH		;Select drive and wait ready (HL->curtrk)
+LSLDRV1	EQU	0F8F1H
+BSLDRV1	EQU	0F901H
+HDLOAD	EQU	0F913H		;Load head to surface
+WHDLOAD	EQU	0F91CH
+HUNLOAD	EQU	0F924H		;unload head
+HOME1	EQU	0F929H		;Sel drive and home to track 0
+HOME2	EQU	0F92CH		;Home drive to track 0
+LHOME21	EQU	0F92FH
+RETRY	EQU	0F94BH		;Dec (6FEE) - retries?
+RETNZ	EQU	0F957H		;Error return with NZ
+BUF137	EQU	0F95BH		;137-byte sector I/O buffer
+BUFDAT1	EQU	0F95DH		;Buffer type 2 data 1
+BUFPLD1	EQU	0F95EH		;Buffer type 1 payload
+BUFCKS2	EQU	0F95FH		;Buffer type 2 checksum
+BUFDAT2	EQU	0F960H		;Buffer type 2 data 2
+BUFPFXE	EQU	0F961H		;Buffer type 2 prefix end
+BUFPLD2	EQU	0F962H		;Byffer type 2 payload
+BUFSTOP	EQU	0F9DEH		;Buffer type 1 stop
+BUFCKS1	EQU	0F9DFH		;Buffer type 1 checksum
+DCBS	EQU	0F9E9H		;4 Drives DCBs (DPH)
+DPARSPT	EQU	0FA29H		;DPB origin: SPT=sectors per track
+DPARBSH	EQU	0FA2BH		;BSH=data alloc block shift factor
+DPARBLM	EQU	0FA2CH		;BLM=data alloc block mask
+DPAREXM	EQU	0FA2DH		;EXM=extent mask
+DPARDSM	EQU	0FA2EH		;DSM=total capacity of the disk drive
+DPARDRM	EQU	0FA30H		;DRM=total directory capacity
+DPARAL0	EQU	0FA32H		;AL0=reserved directory block 0
+DPARAL1	EQU	0FA33H		;AL1=reserved directory block 1
+DPARCKS	EQU	0FA34H		;CKS=size of directory check vector
+DPAROFF	EQU	0FA36H		;OFF=number of reserved tracks at beg
+SCTRTBL	EQU	0FA38H		;CP/M Sector Translation table (XLT)
+ERRCNTR	EQU	0FA58H		;I/O error counter
+DSKFLGS	EQU	0FA59H		;Disk I/O control flags
+PUNCH_	EQU	0FA5AH		;punch character from C
+READER_	EQU	0FA5DH		;read character into A from reader device
+CONST_	EQU	0FA60H		;console status, 0ffh if char ready, 00h if not
+RD2SIO1	EQU	0FA69H		;read char into A from 2SIO1
+CONOUT_	EQU	0FA75H		;console character output from C
+LASTOUT	EQU	0FA8DH		;Last char to 2SIO1
+LISTST_	EQU	0FA8EH		;return list status (0ffh if ready, 00h if not)
+INI2SIO	EQU	0FA97H		;Init 2SIO1 and 2SIO2
+LIST_	EQU	0FAA4H		;list character from C
+DIRBUF	EQU	0FAB1H		;Directory buffer
+DSK0CSV	EQU	0FB31H		;used for software check for changed disks (CSV)
+DSK0ALV	EQU	0FB45H		;used by BDOS to keep disk storage alloc info (ALV)
+DSK1CSV	EQU	0FB55H
+DSK1ALV	EQU	0FB69H
+DSK2CSV	EQU	0FB79H
+DSK2ALV	EQU	0FB8DH
+DSK3CSV	EQU	0FB9DH
+DSK3ALV	EQU	0FBB1H
