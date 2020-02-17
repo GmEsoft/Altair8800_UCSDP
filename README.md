@@ -4,6 +4,12 @@ Altair8800_UCSDP
 Port of UCSD p-System IV to Altair8800 Floppies
 -----------------------------------------------
 
+
+![UCSD Pascal Welcome Screen](Capture1.PNG)
+
+![Altair-Duino-Pro](Altair-Duino-Pro.jpeg)
+
+
 The goal of this project is to adapt an existing UCSD Pascal IV system to 8" Altair-format floppy 
 disks so it can be booted from the standard CP/M bootloader ROM (CDBL on Altair-Duino).
 
