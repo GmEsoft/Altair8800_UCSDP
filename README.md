@@ -84,3 +84,25 @@ The generated disk images can then be copied to the Altair-Duino SD card. The DS
 file containing the list of disk images needs to be adapted, to include the names of the new disk 
 images.
 
+
+Files:
+------
+
+- `DISK20BOOT.ASM`: source of the primary boot sectors I wrote from the reverse-engineered boot 
+  sectors of the 63K CP/M 2.2mits disk image (DISK01.DSK from the Altair-Duino SD Card).
+- `AltairDisk.c:` the tool I created to convert the Altair 137-byte sectors disk images to and from
+  flat 128-byte sectors disk images, easier to manipulate.
+
+
+
+Dedications:
+------------
+
+I dedicated my work to:
+- _Edo Munk_, who did a great work writing his Z80Pack emulator and provided us with many useful
+  UCSD Pascal resources, including p-System images running on his emulator and lots of documentation.
+- _David Hansel_, who wrote and still maintains the Altair-8800 emulator software runnin in the
+  Altair-Duino.
+- _Chris Davis_, who designed and sells the remarquable Altair-Duino kits.
+- _XXXXX_, who wrote the _Combo Disk Boot Loader_ (CDBL) module, which I reverse-engineered to
+  understand how the Altair Disk System works.
