@@ -65,7 +65,7 @@ de-skew the data from the original UCSD disk images.
 The build process:
 ------------------
 
-1. Assemble the DISK20CDBL bootstrap module, using DISK20CDBL.asm, written in Z-80 assembly 
+1. Assemble the DISK20BOOT bootstrap module, using DISK20BOOT.asm, written in Z-80 assembly 
    language, using only the 8080A-compatible instructions, but easier to read and understand;
 2. Convert the original Altair-Duino CP/M 137-byte sectors disk image DISK01.DSK to a flat image 
    128-byte sectors format DISK01.IMG, using the tool AltairDisk;
