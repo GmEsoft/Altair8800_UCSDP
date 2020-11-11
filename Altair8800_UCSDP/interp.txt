@@ -49,13 +49,10 @@ NEW.INTERP        30 22-Aug- 8   187   512  Datafile
 After linking, X(ecute:
 COMPRESS.CODE     10 18-Aug- 8   177   512  Codefile
 
-     File to compress : system.interp
+     File to compress : new.interp
 
      Output file (<ret> for same) :
 
-SYSTEM.LIBRARY     9 22-Aug- 8   161   512  Codefile
-< UNUSED >      2215             217
-18/18 files<listed/in-dir>, 217 blocks used, 2215 unused, 2215 in largest
 
 Install NEW.INTERP to SYSTEM.INTERP:
 	F(iler - T(rans - NEW.INTERP -> #4:SYSTEM.INTERP

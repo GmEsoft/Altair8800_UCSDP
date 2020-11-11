@@ -1,4 +1,4 @@
-;** Z-80(tm) DISASSEMBLER V1.20beta1 - (c) 2015-20 GmEsoft, All rights reserved. **
+;=== Altair-8800 UCSD Pascal Primary Bootstrap  ===
 ;
 ;	Mon Feb 10 12:13:14 2020
 ;
