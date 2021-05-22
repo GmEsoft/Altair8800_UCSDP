@@ -7,7 +7,7 @@
 #include <fcntl.h>    // O_RDWR...
 #include <sys/stat.h> // S_IWRITE
 
-#define MAKEDISK "UCSD p-System Disk Image Convertor V1.2 for Z80-MBC2, (C) 2019-20 by GmEsoft"
+#define MAKEDISK "UCSD p-System Disk Image Converter V1.2 for Z80-MBC2, (C) 2019-20 by GmEsoft"
 
 typedef unsigned int uint32_t;
 

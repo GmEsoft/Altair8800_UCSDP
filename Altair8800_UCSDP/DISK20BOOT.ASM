@@ -1,10 +1,5 @@
 ;=== Altair-8800 UCSD Pascal Primary Bootstrap  ===
 ;
-;	Mon Feb 10 12:13:14 2020
-;
-;	Equates file   : DISK01BOOT.EQU
-;	Screening file : DISK01BOOT.SCR
-
 BIOSTK0	EQU	0EB00H		;BIOS dest for track 0
 SECBUF	EQU	0DE00H		;Sector buffer
 SECCKS	EQU	0DE84H		;Sector checksum

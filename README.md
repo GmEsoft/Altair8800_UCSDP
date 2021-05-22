@@ -99,7 +99,7 @@ Dedications:
 ------------
 
 I dedicated my work to:
-- _Edo Munk_, who did a great work writing his Z80Pack emulator and provided us with many useful
+- _Udo Munk_, who did a great work writing his Z80Pack emulator and provided us with many useful
   UCSD Pascal resources, including p-System images running on his emulator and lots of documentation.
 - _David Hansel_, who wrote and still maintains the Altair-8800 emulator software runnin in the
   Altair-Duino.
