@@ -14,3 +14,7 @@
 /Altair8800_UCSDP/zmac
 /Altair8800_UCSDP/*.LST
 /Altair8800_UCSDP/*.MAP
+/Altair8800_UCSDP/*.LOG
+/Altair8800_UCSDP/*.bak
+/Altair8800_UCSDP/*.rar
+/Altair8800_UCSDP/*.zip
