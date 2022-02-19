@@ -1,0 +1,40 @@
+Instructions to build Colossal Cave Adventure
+=============================================
+
+Start UCSD Pascal with the following disks:
+  4 # SYS1:
+  5 # ADVX:
+  9 # ADVSRC:
+
+Start Filer: 
+  F(ile
+
+Set Prefix to #9:
+  P(refix
+  Prefix titles by what vol ? #9
+
+Quit Filer:
+  Q(uit
+
+Compile ADVX:
+  C(omp
+  Compile what text? ADVX
+  To what codefile? #5:ADVX
+
+
+To start the game:
+------------------
+
+Start Filer:
+  F(ile
+
+Set Prefix to #5:
+  P(refix
+  Prefix titles by what vol ? #5
+
+Quit Filer:
+  Q(uit
+
+Execute ADVX:
+  X(ecute
+  Execute what file? ADVX
